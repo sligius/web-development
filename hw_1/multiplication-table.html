@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link href="multiplication-table.css" rel="stylesheet">
+</head>
+
+<body>
+    <input type="text" placeholder="Введите число" id="number">
+    <button id="insert_table"> Вставить таблицу </button>
+    <table id="table"></table>
+</body>
+
+<script>
+
+    function insert_table() {
+        const table = document.getElementById('table');
+        table.innerHTML = '';
+        const n = parseInt(document.getElementById('number').value);
+
+        for (let i = 0; i < n; i++) {
+            const tr = document.createElement('tr');
+            for (let j = 0; j < n; j++) {
+                const td = document.createElement('td');
+                td.textContent = (i + 1) * (j + 1);
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+    }
+
+    const insertTableButton = document.getElementById("insert_table");
+    insertTableButton.addEventListener("click", insert_table);
+</script>
+
+</html>

@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.passport-container {
+    position: relative;
+}
+
+.user-picture {
+    position: absolute;
+    top: 460px;
+    left: 35px;
+    height: 150px;
+    width: 130px;
+}
+
+#department {
+    position: absolute;
+    font-weight: 600;
+    top: 55px;
+    left: 150px;
+}
+
+#departmentCode {
+    position: absolute;
+    font-weight: 600;
+    top: 140px;
+    left: 350px;
+}
+
+.input-field {
+    position: absolute;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+}
+
+#firstName {
+    top: 460px;
+    left: 230px;
+}
+
+#lastName {
+    top: 405px;
+    left: 230px;
+}
+
+#birthDate {
+    top: 513px;
+    left: 320px;
+}
+
+#gender {
+    top: 515px;
+    left: 125px;
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+#clearButton {
+    position: absolute;
+    top: 660px;
+    left: 200px;
+    padding: 8px 15px;
+    background-color: hsl(335, 100%, 84%);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: solid rgb(255, 133, 196);
+    cursor: pointer;
+}
+
+#saveButton {
+    position: absolute;
+    top: 660px;
+    left: 350px;
+    padding: 8px 15px;
+    background-color: hsl(191, 100%, 76%);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: solid rgb(49, 200, 255);
+    cursor: pointer;
+}

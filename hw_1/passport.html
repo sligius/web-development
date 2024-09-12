@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="passport.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="passport-container">
+        <img src="/hw_1/sources/passport.jpg" alt="Passport" class="passport-image">
+
+        <p id="department"> ОТДЕЛОМ УФМС ПО ГОР. N</p>
+        <p id="departmentCode">123-456</p>
+
+        <img src="/hw_1/sources/userpic.jpg" alt="User picture" class="user-picture">
+
+        <input type="text" class="input-field" id="firstName" placeholder="Имя">
+        <input type="text" class="input-field" id="lastName" placeholder="Фамилия">
+        <input type="date" class="input-field" id="birthDate" placeholder="Дата рождения">
+        <input type="text" class="input-field" id="gender" placeholder="Пол">
+
+        <button id="clearButton">Очистить поля</button>
+        <button id="saveButton">Сохранить</button>
+    </div>
+
+    <script>
+        const firstNameInput = document.getElementById('firstName');
+        const lastNameInput = document.getElementById('lastName');
+        const birthDateInput = document.getElementById('birthDate');
+        const genderInput = document.getElementById('gender');
+        const clearButton = document.getElementById('clearButton');
+        const saveButton = document.getElementById('saveButton');
+
+        genderInput.addEventListener('input', function (event) {
+            const inputValue = this.value.toUpperCase();
+
+            if (inputValue !== 'Ж' && inputValue !== 'М') {
+                this.value = '';
+            }
+        });
+
+        clearButton.addEventListener('click', () => {
+            firstNameInput.value = '';
+            lastNameInput.value = '';
+            birthDateInput.value = '';
+            genderInput.value = '';
+
+            localStorage.removeItem('firstName');
+            localStorage.removeItem('lastName');
+            localStorage.removeItem('birthDate');
+            localStorage.removeItem('gender');
+        });
+
+        saveButton.addEventListener('click', () => {
+            localStorage.setItem('firstName', firstNameInput.value);
+            localStorage.setItem('lastName', lastNameInput.value);
+            localStorage.setItem('birthDate', birthDateInput.value);
+            localStorage.setItem('gender', genderInput.value);
+        });
+
+        window.addEventListener('load', () => {
+            firstNameInput.value = localStorage.getItem('firstName') || '';
+            lastNameInput.value = localStorage.getItem('lastName') || '';
+            birthDateInput.value = localStorage.getItem('birthDate') || '';
+            genderInput.value = localStorage.getItem('gender') || '';
+        });
+    </script>
+</body>
+
+</html>
