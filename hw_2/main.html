@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="exercise">
+        <p>Введите длины сторон треугольника, чтобы проверить его существование</p>
+        <div class="input-row">
+            <input id="side-a" type="number" placeholder="Сторона a">
+            <input id="side-b" type="number" placeholder="Сторона b">
+            <input id="side-c" type="number" placeholder="Сторона c">
+        </div>
+        <button class="res-button" onclick="checkTriangle()">Проверить</button>
+        <p id="result-1"></p>
+    </div>
+
+    <div class="exercise">
+        <p>Введите любое число</p>
+        <div class="input-row">
+            <input id="number-y" type="number" placeholder="">
+        </div>
+        <button class="res-button" onclick="power()">Проверить</button>
+        <p id="result-2"></p>
+    </div>
+
+    <div class="exercise">
+        <p id="balance-text"></p>
+        <div class="input-row">
+            <img src="./sources/card.png" id="card-image">
+        </div>
+        <button class="res-button" onclick="showOptions()">Изменить</button>
+        <p id="result-3"></p>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

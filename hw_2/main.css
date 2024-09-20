@@ -1,0 +1,34 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.exercise {
+    border: solid rebeccapurple;
+    border-radius: 30px;
+    margin: 25px 15%;
+}
+
+input {
+    border: solid rgb(190, 153, 228);
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.res-button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    border: solid rgb(233, 222, 255);
+    border-radius: 30px;
+    width: 200px;
+    background-color: rgb(233, 222, 255);
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px 0px;
+}
