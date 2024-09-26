@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bc7063be8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Exercise 1 -->
+    <div class="exercise">
+        <p class='main-text'>Палиндром</p>
+        <p>Введите любую строку и узнайте является ли она палиндромом</p>
+        <div class="input-row">
+            <input id="line" type="text" placeholder="Строка">
+        </div>
+        <button class="res-button" onclick="checkPalindrome()">Проверить</button>
+        <p id="result-1"></p>
+    </div>
+
+    <!-- Exercise 2 -->
+    <div class="exercise">
+        <p class='main-text'>Угадайте число</p>
+        <p>Я загадала число от <span id="min"></span> до <span id="max"></span>. <br>Попробуйте угадать!</p>
+        <div class="input-row">
+            <input type="text" id="guess" placeholder="Введите число">
+            <button class="clear-button" onclick="clearInput()">
+                <i class="fa-solid fa-xmark" id="clear-icon"></i>
+            </button>
+        </div>
+        <button class="res-button" onclick="checkGuess()">Проверить</button>
+        <p id="result-2"></p>
+    </div>
+
+    <!-- Exercise 3 -->
+    <div class="exercise">
+        <p class='main-text'>Средние баллы</p>
+        <div class="input-row" id="input-ex3">
+            <p class="input-text">Введите имена учеников через запятую</p>
+            <input id="names" type="text" placeholder="Имена">
+            <p class="input-text">Введите соответствующие оценки через пробел в формате <br>
+                <оценка 1>-<оценка 2>-<оценка 3>
+            </p>
+            <input id="marks" type="text" placeholder="Оценки">
+
+        </div>
+        <button class="res-button" onclick="checkMarks()">Узнать</button>
+        <p id="result-3"></p>
+    </div>
+
+    <!-- Exerxise 4 -->
+    <div class="exercise">
+        <p class='main-text'>Калорийность продуктов</p>
+        <div class="input-row" id="input-ex4">
+            <p class="input-text">Введите название продуктов через пробел</p>
+            <input id="products" type="text" placeholder="Продукты">
+            <p class="input-text">Введите соответствующее БЖУ через пробел в формате <br>
+                <белки>-<жиры>-<углеводы>
+            </p>
+            <input id="bju" type="text" placeholder="БЖУ">
+        </div>
+        <button class="res-button" onclick="checkCalories()">Узнать</button>
+        <p id="result-4"></p>
+    </div>
+
+    <!-- Exercise 5 -->
+    <div class="exercise">
+        <p class='main-text'>Анализ прибыли</p>
+        <p>Введите название товара и, через запятую, полученную с этой продажи прибыль</p>
+        <div id="input-container-sale">
+        </div>
+        <div class="button-container">
+            <button id="add-row" onclick="addInputRowSale()"><i class="fa-solid fa-plus"></i></button>
+            <button class="res-button" onclick="analyzeSales()">Проанализировать</button>
+        </div>
+        <p id="result-5"></p>
+    </div>
+
+    <!-- Exercise 6 -->
+    <div class="exercise">
+        <p class='main-text'>У кого больше концертов в 2025?</p>
+        <p>Введите название группы и дату концерта</p>
+        <div id="input-container-concert">
+        </div>
+        <div class="button-container">
+            <button id="add-row" onclick="addInputRowConcert()"><i class="fa-solid fa-plus"></i></button>
+            <button class="res-button" onclick="analyzeConcerts()">Проанализировать</button>
+        </div>
+        <p id="result-6"></p>
+    </div>
+
+    <!-- Exercise 7 -->
+    <div class="exercise">
+        <p class='main-text'>Какие товары самые дешевые?</p>
+        <p>Введите название продукта и стоимость в каждом магазине</p>
+        <div id="input-container-product">
+        </div>
+        <div class="button-container">
+            <button id="add-row" onclick="addInputRowProduct()"><i class="fa-solid fa-plus"></i></button>
+            <button class="res-button" onclick="analyzePrices()">Проанализировать</button>
+        </div>
+        <p id="result-7"></p>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

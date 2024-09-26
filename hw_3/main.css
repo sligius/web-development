@@ -1,0 +1,83 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.main-text {
+    font-weight: 900;
+}
+
+.exercise {
+    border: solid rebeccapurple;
+    border-radius: 30px;
+    margin: 25px 10%;
+    padding: 0 20px;
+}
+
+input {
+    border: solid rgb(190, 153, 228);
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+#input-ex3 input,
+#input-ex4 input {
+    width: 300px;
+}
+
+input.sale-data {
+    width: 400px;
+}
+
+.input-text {
+    font-size: 20px;
+}
+
+#add-row {
+    margin: 10px;
+    width: 40px;
+    height: 25px;
+    border: dashed rgb(190, 153, 228);
+    background-color: rgb(247, 239, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.res-button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    border: solid rgb(233, 222, 255);
+    border-radius: 30px;
+    width: 200px;
+    background-color: rgb(233, 222, 255);
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px 0px;
+}
+
+.clear-button {
+    background: rgb(255, 233, 233);
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid rgb(238, 108, 108);
+    width: 40px;
+    height: 38px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+}
+
+#clear-icon {
+    margin: 9px 0px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

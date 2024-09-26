@@ -12,7 +12,7 @@ function checkTriangle() {
   let sideC = Number(document.getElementById("side-c").value);
 
   if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
-    document.getElementById("result").innerHTML = "Некорректный ввод!";
+    document.getElementById("result-1").innerHTML = "Некорректный ввод!";
     return;
   }
 
