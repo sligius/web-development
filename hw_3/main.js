@@ -343,7 +343,7 @@ function analyzePrices() {
     const prices = [];
     for (let i = 0; i < 3; i++) {
       const priceInput = row.querySelectorAll(".product-price")[i];
-      const price = parseFloat(priceInput.value.trim());
+      const price = Number(priceInput.value.trim());
       if (!isNaN(price)) {
         prices.push(price);
       }
@@ -365,6 +365,7 @@ function analyzePrices() {
   });
 
   const result = document.getElementById("result-7");
+  result.textContent = "";
 
   sortedProducts.forEach(([productName, prices]) => {
     result.innerHTML += `${productName}<br>`;
