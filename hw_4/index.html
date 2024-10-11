@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="page-name-box">
+        <h1 id="page-name">Disney characters</h1>
+    </div>
+    <div class="sort-container disney-font">
+        <div class="sort">
+            <h2>Sort by:</h2>
+            <div class="item-sort">
+                <input type="radio" id="sort-name" name="sort-criteria" checked>
+                <label for="sort-name">
+                    Name
+                </label>
+            </div>
+            <div class="item-sort">
+                <input type="radio" id="sort-mentions" name="sort-criteria">
+                <label for="sort-mentions">
+                    Appearance
+                </label>
+            </div>
+        </div>
+
+        <div class="sort">
+            <h2>Sort order:</h2>
+            <div class="item-sort">
+                <input type="radio" name="sort-order" id="sort-ascending" value="asc" checked>
+                <label for="sort-ascending">Ascending</label>
+            </div>
+            <div class="item-sort">
+                <input type="radio" name="sort-order" id="sort-descending" value="desc">
+                <label for="sort-descending">Descending</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="characters-list" class="disney-font"></div>
+</body>
+<script src="main.js"></script>
+
+</html>

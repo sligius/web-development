@@ -1,0 +1,136 @@
+body {
+    background-color: rgba(224, 216, 255, 0.63);
+    text-align: center;
+    font-family: 'Disney';
+}
+
+.card {
+    width: 20%;
+    border: solid rgba(42, 26, 112, 0.63);
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 55px;
+    text-align: center;
+    align-items: center;
+    flex: auto;
+    margin: 20px;
+    padding: 10px;
+    min-width: 300px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.card-inner {
+    flex: auto;
+}
+
+.big-text {
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 60px;
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#page-name-box {
+    height: 250px;
+    background-image: url(./sources/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.349);
+    background-blend-mode: overlay;
+}
+
+#page-name {
+    font-size: 100px;
+    flex: auto;
+    color: white;
+    text-shadow:
+        -3px -3px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+#characters-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.card-image {
+    width: 300px;
+    border-radius: 25px;
+}
+
+
+@font-face {
+    font-family: 'Disney';
+    src: local('fonts'),
+        url('./fonts/NewWaltDisneyFontRegular-BPen.ttf') format('truetype');
+    font-weight: normal;
+}
+
+.disney-font {
+    font-family: "Disney";
+}
+
+.sort-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sort {
+    font-size: 30px;
+}
+
+.item-sort {
+    float: left;
+    margin-top: -20px;
+}
+
+.sort input[type=radio] {
+    display: none;
+}
+
+.sort label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 2px solid #877ea5;
+    border-right: none;
+}
+
+.sort .item-sort>label {
+    border-radius: 6px 0 0 6px;
+}
+
+.sort .item-sort:last-child label {
+    border-radius: 0 6px 6px 0;
+    border-right: 2px solid #877ea5;
+}
+
+
+.sort input[type=radio]:checked+label {
+    background: #a25ae680;
+}
+
+.sort label:hover {
+    color: #666;
+}
