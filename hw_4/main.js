@@ -79,7 +79,6 @@ function displayCharacters(characters) {
   const sortAscendingButton = document.getElementById("sort-ascending");
   const sortDescendingButton = document.getElementById("sort-descending");
 
-  // Выбор критерия сортировки
   const sortNameRadio = document.getElementById("sort-name");
   const sortMentionsRadio = document.getElementById("sort-mentions");
 
@@ -116,7 +115,6 @@ function displayCharacters(characters) {
     sortCharacters();
   });
 
-  // Функция для сортировки персонажей
   function sortCharacters() {
     const sortedCharacters = characters.slice().sort((a, b) => {
       if (sortCriteria === "name") {
