@@ -11,14 +11,6 @@ import CharacterList from './components/CharacterList.vue'
   </div>
 </template>
 
-<script>
-export default {
-  components: {
-    CharacterList,
-  },
-};
-</script>
-
 <style>
 body {
   background-color: rgba(224, 216, 255, 0.63);

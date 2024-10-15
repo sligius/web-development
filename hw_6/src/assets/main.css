@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Raleway;
+    background: rgb(235, 192, 252);
+    background: radial-gradient(circle, rgba(235, 192, 252, 0.9) 0%, rgba(226, 195, 255, 0.8969712885154062) 59%, rgba(165, 206, 255, 0.9) 100%);
+}
+
+#page-name {
+    font-weight: 900;
+    color: rgb(63, 63, 63);
+    font-size: 32px;
+}
+
+.completed p {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.checkbox {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.taskText {
+    font-weight: 500;
+    width: 80%;
+}
+
+.deleteButton {
+    font-family: Raleway;
+    font-size: 16px;
+    width: 10%;
+    height: 10%;
+    background-color: #ff5f5f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.todo-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255) 0%, rgba(245, 245, 245) 64%, rgba(233, 233, 233) 100%);
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.todo-input-field {
+    font-family: Raleway;
+    font-size: 20px;
+    width: 90%;
+    height: 25px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    font-family: Raleway;
+    width: 8%;
+    height: 46.33px;
+    background-color: #b362ffb9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.add-icon {
+    height: 100%;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+input[type="checkbox"] {
+    accent-color: #942dcf;
+}
