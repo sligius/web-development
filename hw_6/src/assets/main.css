@@ -20,7 +20,7 @@ body {
 }
 
 li {
-    padding: 10px;
+    padding: 10px 5%;
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
@@ -34,33 +34,40 @@ li:last-child {
 
 .checkbox {
     margin-right: 5px;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .taskText {
     font-weight: 500;
+    font-size: 20px;
     width: 80%;
 }
 
 .deleteButton {
-    font-family: Raleway;
-    font-size: 16px;
-    width: 10%;
-    height: 10%;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
     background-color: #ff5f5f;
     color: white;
-    padding: 5px 10px;
+    padding: 5px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
+.delete-icon {
+    height: 100%;
+    font-weight: bold;
+}
+
 .todo-container {
     width: 90%;
     margin: 0 auto;
-    padding: 20px 20px 0 20px;
+    padding: 25px 25px 0 25px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background: rgb(255, 255, 255);

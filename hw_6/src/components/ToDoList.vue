@@ -42,7 +42,7 @@ export default {
                     text: this.newToDoText,
                     completed: false,
                 };
-                this.todos.push(newToDo);
+                this.todos.unshift(newToDo);
                 this.newToDoText = '';
                 this.saveToDos(); 
             }
